@@ -13,11 +13,11 @@ i = 1
 while entered_question != "":
     print ("Enter your question. Press ENTER to quit")
     entered_question = input()
-    print (entered_question)
+    print ("Your question was: " + entered_question)
     f.write (entered_question + "\n")
    
     showed_answer = Answers [random.randint(0,10)]
-    print (showed_answer)
+    print ("The answer is: " + showed_answer)
     f.write(showed_answer + "\n")
     
     if i==3:
